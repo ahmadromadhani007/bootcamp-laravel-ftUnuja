@@ -17,4 +17,12 @@ Route::get('/', function () {
     return view('dashboard');
 });
 
+Route::get('/dosen1', function () {
+    return view('dosen.insert');
+});
+
+Route::get('/dosen2', function () {
+    return view('dosen.list');
+});
+
 // Route::get('/', [TampilanController::class,'index']);

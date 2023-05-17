@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title', 'Dasboard')
+@section('title', 'Dashboard')
 @section('contain')
 <div id="kt_content_container" class="container-xxl">
 							<!--begin::Row-->

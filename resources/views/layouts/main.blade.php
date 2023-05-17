@@ -5,7 +5,7 @@
 
 <head>
 	<base href="">
-	<title>BootcampFT @yield('title')</title>
+	<title>BootcampFT | @yield('title')</title>
     @include('layouts.style')
     @yield('style-used-by-this-page')
 
