@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Master\MahasiswaController;
 use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\TampilanController;
 /*
@@ -17,12 +18,10 @@ Route::get('/', function () {
     return view('dashboard');
 });
 
-Route::get('/dosen1', function () {
-    return view('dosen.insert');
+Route::get('/dosen', function () {
+    return view('datamasters\dosen\list');
 });
-
-Route::get('/dosen2', function () {
-    return view('dosen.list');
-});
+//tb_mahasiswa
+Route::get('/mahasiswa',[MahasiswaController::class, 'index'])->name('dm.mahasiswa');
 
 // Route::get('/', [TampilanController::class,'index']);
