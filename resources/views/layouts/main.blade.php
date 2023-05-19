@@ -2087,7 +2087,7 @@
 	</div>
 	<!--end::Scrolltop-->
 	<!--end::Main-->
-
+	@include('layouts.script')
 </body>
 <!--end::Body-->
 
