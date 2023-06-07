@@ -5,6 +5,13 @@
 <!--begin::Global Javascript Bundle(used by all pages)-->
 <script src="{{ asset('metronic/js/plugins.bundle.js') }}"></script>
 <script src="{{ asset('metronic/js/scripts.bundle.js') }}"></script>
+<script>
+    const sessionSuccess = @json(session()->get('success'));
+    if (sessionSuccess) {
+        Swal.fire("Success!", sessionSuccess, "success");
+    }
+</script>
+@stack('script')
 <!--end::Global Javascript Bundle-->
 {{-- <!--begin::Page Vendors Javascript(used by this page)-->
 <script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>

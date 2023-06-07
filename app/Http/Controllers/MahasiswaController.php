@@ -49,7 +49,7 @@ class MahasiswaController extends Controller
             "alamat" => $request->alamat,
             "semester" => $request->semester,
             "no_telefon" => $request->no_telefon,
-            "tgl_lahir" => $request->tgl_lahir,
+            "tanggal_lahir" => $request->tanggal_lahir,
             "jenkel" => $request->jenkel,
             "email" => $request->email,
             "tahun_masuk" => $request->tahun_masuk,
@@ -82,7 +82,7 @@ class MahasiswaController extends Controller
      */
     public function edit($id_mahasiswa)
     {
-        $row = Jurusan::find($id_mahasiswa);
+        $row = Mahasiswa::find($id_mahasiswa);
         return view("datamasters.mahasiswa.form_edit", compact("row"));
     }
 
@@ -104,12 +104,12 @@ class MahasiswaController extends Controller
                 "alamat" => $request->alamat,
                 "semester" => $request->semester,
                 "no_telefon" => $request->no_telefon,
-                "tgl_lahir" => $request->tgl_lahir,
+                "tanggal_lahir" => $request->tanggal_lahir,
                 "jenkel" => $request->jenkel,
                 "email" => $request->email,
                 "tahun_masuk" => $request->tahun_masuk,
                 "status" => $request->status,
-                "updated_at" => now(),
+                "updated_at" => now()
             ]);
 
         return redirect("/mahasiswa")->with(
@@ -127,8 +127,8 @@ class MahasiswaController extends Controller
     public function destroy($id_mahasiswa)
     {
         // mahasiswa::where('id_mahasiswa', $id_mahasiswa)->delete();
-        $deleteJurusan = Jurusan::where("id_mahasiswa", $id_mahasiswa)->first();
-        $deleteJurusan->delete();
+        $deleteMahasiswa = Mahasiswa::where("id_mahasiswa", $id_mahasiswa)->first();
+        $deleteMahasiswa->delete();
 
         return redirect("/mahasiswa")->with(
             "success",

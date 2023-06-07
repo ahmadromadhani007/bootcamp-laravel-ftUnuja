@@ -86,14 +86,16 @@
             <div class="row mb-3">
                 <label for="" class="form-label">Tahun Masuk</label>
                 <div class="col-sm-10">
-                    <input type="text" name="tahun_masuk" class="form-control" required placeholder="Tahun Masuk" />
+                    <input type="date" name="tahun_masuk" class="form-control" required placeholder="Tahun Masuk" />
                 </div>
             </div>
             <br>
             <label class="form-label">Status : </label>
             <div class="col-sm-9">
                 <input type="radio" name="status" value="aktif" checked> Aktif
-                <input type="radio" name="status" value="nonaktif"> Non-Aktif
+                <input type="radio" name="status" value="non aktif"> Non Aktif
+                <input type="radio" name="status" value="cuti"> Cuti
+                <input type="radio" name="status" value="lulus"> Lulus
             </div>
             <br>
             <div class="col-sm-10 ">

@@ -13,14 +13,16 @@
             <div class="row mb-3">
                 <label for="" class="form-label">NIM</label>
                 <div class="col-sm-10">
-                    <input type="text" name="nim" class="form-control" required placeholder="NIM" />
+                    <input type="text" name="nim" value="{{ $row->nim }}" class="form-control" required
+                        placeholder="NIM" />
                 </div>
             </div>
             <br>
             <div class="row mb-3">
                 <label for="" class="form-label">Nama</label>
                 <div class="col-sm-10">
-                    <input type="text" name="nama" class="form-control" required placeholder="Nama" />
+                    <input type="text" name="nama" value="{{ $row->nama }}" class="form-control" required
+                        placeholder="Nama" />
                 </div>
             </div>
             <div class="row mb-3">
@@ -43,28 +45,32 @@
             <div class="row mb-3">
                 <label for="" class="form-label">Alamat</label>
                 <div class="col-sm-10">
-                    <input type="text" name="alamat" class="form-control" required placeholder="Alamat" />
+                    <input type="text" name="alamat" value="{{ $row->alamat }}" class="form-control" required
+                        placeholder="Alamat" />
                 </div>
             </div>
             <br>
             <div class="row mb-3">
                 <label for="" class="form-label">Semester</label>
                 <div class="col-sm-10">
-                    <input type="text" name="semester" class="form-control" required placeholder="Semester" />
+                    <input type="text" name="semester" value="{{ $row->semester }}" class="form-control" required
+                        placeholder="Semester" />
                 </div>
             </div>
             <br>
             <div class="row mb-3">
                 <label for="" class="form-label">No Tlpn</label>
                 <div class="col-sm-10">
-                    <input type="text" name="no_telefon" class="form-control" required placeholder="No Tlpn" />
+                    <input type="text" name="no_telefon" value="{{ $row->no_telefon }}" class="form-control" required
+                        placeholder="No Tlpn" />
                 </div>
             </div>
             <br>
             <div class="row mb-3">
                 <label for="" class="form-label">Tanggal Lahir</label>
                 <div class="col-sm-10">
-                    <input type="date" name="tanggal_lahir" class="form-control" required placeholder="Tanggal Lahir" />
+                    <input type="date" name="tanggal_lahir" value="{{ $row->tanggal_lahir }}" class="form-control"
+                        required placeholder="Tanggal Lahir" />
                 </div>
             </div>
             <br>
@@ -79,14 +85,16 @@
             <div class="row mb-3">
                 <label for="" class="form-label">Email</label>
                 <div class="col-sm-10">
-                    <input type="text" name="email" class="form-control" required placeholder="Email" />
+                    <input type="text" name="email" value="{{ $row->email }}" class="form-control" required
+                        placeholder="Email" />
                 </div>
             </div>
             <br>
             <div class="row mb-3">
                 <label for="" class="form-label">Tahun Masuk</label>
                 <div class="col-sm-10">
-                    <input type="text" name="tahun_masuk" class="form-control" required placeholder="Tahun Masuk" />
+                    <input type="date" name="tahun_masuk" value="{{ $row->tahun_masuk }}" class="form-control" required
+                        placeholder="Tahun Masuk" />
                 </div>
             </div>
             <br>

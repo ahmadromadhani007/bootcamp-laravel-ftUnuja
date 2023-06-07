@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\JurusanController;
 use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\TampilanController;
 /*
@@ -24,5 +25,6 @@ Route::get('/dosen', function () {
 //tb_mahasiswa
 // Route::get('/mahasiswa',[MahasiswaController::class, 'index'])->name('dm.mahasiswa');
 Route::resource("/mahasiswa", MahasiswaController::class);
+Route::resource("/jurusan", JurusanController::class);
 
 // Route::get('/', [TampilanController::class,'index']);
