@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Master\MahasiswaController;
+use App\Http\Controllers\MahasiswaController;
 use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\TampilanController;
 /*
@@ -22,6 +22,7 @@ Route::get('/dosen', function () {
     return view('datamasters\dosen\list');
 });
 //tb_mahasiswa
-Route::get('/mahasiswa',[MahasiswaController::class, 'index'])->name('dm.mahasiswa');
+// Route::get('/mahasiswa',[MahasiswaController::class, 'index'])->name('dm.mahasiswa');
+Route::resource("/mahasiswa", MahasiswaController::class);
 
 // Route::get('/', [TampilanController::class,'index']);

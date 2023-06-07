@@ -6,12 +6,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Mahasiswa extends Model
+class Jurusan extends Model
 {
     use HasFactory;
     use SoftDeletes;
-    protected $table = 'tb_mahasiswa';
-    protected $primaryKey = 'nim';
+    protected $table = 'tb_jurusan';
+    protected $primaryKey = 'id_jurusan';
 
     protected $fillable = [];
 }
