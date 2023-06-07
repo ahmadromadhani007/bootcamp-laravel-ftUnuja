@@ -11,7 +11,7 @@ class Mahasiswa extends Model
     use HasFactory;
     use SoftDeletes;
     protected $table = 'tb_mahasiswa';
-    protected $primaryKey = 'nim';
+    protected $primaryKey = 'id_mahasiswa';
 
     protected $fillable = [];
 }
